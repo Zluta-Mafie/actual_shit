@@ -21,5 +21,5 @@ duration = 3
 print("Starting movement...")
 while(time.time()-start_time<duration):
     lateralMove, rotation = cm.getMoveInstructions()
-    sport_client.Move(0.5, lateralMove, rotation)
+    sport_client.Move(0.5, lateralMove, rotation) # upravit rotaci na preciznejsi vypocet uhlu
     time.sleep(0.5)

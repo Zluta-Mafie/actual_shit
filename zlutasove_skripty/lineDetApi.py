@@ -55,4 +55,4 @@ def GetVisualInfo():
 
     angle = math.degrees(math.atan2(h*0.3, pos2-pos1))
 
-    return (offset1, angle)
+    return (offset1, angle) # poslat do PreciseRotation skriptu pro presnejsi vypocty skrz buffer list
