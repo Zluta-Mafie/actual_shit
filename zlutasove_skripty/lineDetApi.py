@@ -52,7 +52,10 @@ def GetVisualInfo():
 
     pos1, offset1 = get_deviation(M1, w)
     pos2, offset2 = get_deviation(M2, w)
-
+    if (pos1 is None):
+        pos1 = 0
+    if (pos2 is None):
+        pos2 = 0
     angle = math.degrees(math.atan2(h*0.3, pos2-pos1))
 
     return (offset1, angle)
